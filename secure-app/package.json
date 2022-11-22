@@ -1,0 +1,34 @@
+{
+  "name": "secure-app",
+  "version": "1.0.0",
+  "description": "Simple Express API that is hardened to a SQL injection.",
+  "main": "src/app.js",
+  "scripts": {
+    "serve": "node src/app.js",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cwagne17/vuln-node-sql-inject-app.git"
+  },
+  "author": "cwagne17@students.towson.edu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cwagne17/vuln-node-sql-inject-app/issues"
+  },
+  "homepage": "https://github.com/Cwagne17/vuln-node-sql-inject-app#readme",
+  "nodemonConfig": {
+    "exec": "npm run serve",
+    "verbose": true,
+    "watch": [
+      "src"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
